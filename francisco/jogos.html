@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function slide1(){
+            document.getElementById('id').src="Mudanca/fronteiras.jpg";
+            setTimeout("slide2()", 5000);
+
+        }
+        function slide2(){
+            document.getElementById('id').src="Mudanca/scu.jpg"
+            setTimeout("slide3()", 2000);
+
+        }
+
+            function slide3(){
+                document.getElementById('id').src="Mudanca/unlixo.jpg"
+                setTimeout("slide4()", 2500);
+        }
+
+        function slide4(){
+
+            document.getElementById('id').src="Mudanca/gens.jpg"
+            setTimeout("slide5()", 1000)
+        }
+
+        function slide5(){
+            document.getElementById('id').src="Mudanca/sa1.jpg"
+            setTimeout("slide6()", 2000)
+        }
+        function slide6(){
+            document.getElementById('id').src="Mudanca/sa2.jpg"
+            setTimeout("slide7()", 2000)
+        }
+
+        function slide7(){
+            document.getElementById('id').src="Mudanca/origens.png"
+            setTimeout("slide1()", 2000)
+        }
+    </script>
+</head>
+<body onload="slide1()">
+
+    <table border="1">
+        <td style="background: green;width: 500px;">
+        <h2>Só aqui</h2>
+    </td>
+    <td style="padding: 10; margin: 10px;text-align: center;width: 2048px;">
+        <img id="id" style="width:30%;">
+
+</td>
+
+    </table>
+
+    
+</body>
+</html>
